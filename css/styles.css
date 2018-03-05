@@ -1,6 +1,27 @@
+@import "./extras.css";
+
 .enlaceSecundario{
     color: lightgreen
 }
 .tiempo{
-    color: lightgray
+    color: lightgray;
+    font-size: smaller
+}
+/* Especificidad (Se aplican en cascada siempre que tengan el mismo nombre y tipo): 
+a - inline (no se utilizan nunca)
+b - por id
+c - clases (recomendado)
+d - etiquetas html
+
+Si queremos ganar en especificidad hacemos esto:
+p.p1 
+o
+p.p1.p1
+*/
+p1{
+    color: lightcoral
+}
+
+p2{
+    color: indigo
 }
